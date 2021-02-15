@@ -1,6 +1,6 @@
 {
   "name": "@wide/dom-observer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Fast and reliable DOM observer",
   "license": "MIT",
   "author": "Aymeric Assier (https://github.com/myeti)",
@@ -9,8 +9,8 @@
     "Julien Martins Da Costa (https://github.com/jdacosta)"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/wide/dom-observer.git"
+    "type": "git",
+    "url": "https://github.com/wide/dom-observer.git"
   },
   "main": "lib/index.js",
   "engines": {

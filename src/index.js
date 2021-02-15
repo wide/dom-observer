@@ -24,7 +24,7 @@ function tick() {
     }
 
     // unbind deleted elements (optional)
-    if(!registry[selector].unbind) continue;
+    if(!registry[selector].unbind || registry[selector].els.length === 0) continue;
     for(let i = registry[selector].els.length; i--;) {
       if(!registry[selector].els[i].isConnected) {
         registry[selector].unbind(registry[selector].els[i])
@@ -50,6 +50,7 @@ let observing = false
 function startObserver() {
   const obs = new MutationObserver(tick)
   obs.observe(document, { childList: true, subtree: true })
+  observing = true
 }
 
 
